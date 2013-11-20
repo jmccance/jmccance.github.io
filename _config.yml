@@ -10,11 +10,11 @@ author:
   email: jmccance@gmail.com
   github: jmccance
   twitter: jmccance
-  # pinterest: asd123
+  pinterest:
   linkedin: jmccance
-  # resume: asd123
-  bio: test test test
-  email_md5: 408e04f18c33eb4425d9bc1fce5d17ba
+  resume:
+  bio: "Software engineer by way of math, philosophy, and a well-placed Tandy 1000."
+  email_md5: "408e04f18c33eb4425d9bc1fce5d17ba"
   
 BASE_PATH: /
 
