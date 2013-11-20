@@ -1,0 +1,22 @@
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+
+title: jmccance
+author:
+  name: jmccance
+  email: jmccance@gmail.com
+  github: jmccance
+  twitter: jmccance
+  # pinterest: asd123
+  linkedin: jmccance
+  # resume: asd123
+  bio: test test test
+  email_md5: 408e04f18c33eb4425d9bc1fce5d17ba
+  
+BASE_PATH: /
+
+categories_path: categories.html
+tags_path: tags.html
