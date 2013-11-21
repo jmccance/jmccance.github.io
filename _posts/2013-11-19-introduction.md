@@ -133,12 +133,12 @@ preceding command, and `!:2` if you want to just grab the second argument.
 
 One last trick:
 
-   # Note the misspelled command
-   $ mnv -Dthis=that -Dx=y -Dfalse=true -Dup=down
-   org.oss.someplace.goal:plugin
-   -bash: mnv: command not found
-   $ ^mnv^mvn
-   mvn -Dthis=that -Dx=y -Dfalse=true -Dup=down
+    # Note the misspelled command
+    $ mnv -Dthis=that -Dx=y -Dfalse=true -Dup=down
+    org.oss.someplace.goal:plugin
+    -bash: mnv: command not found
+    $ ^mnv^mvn
+    mvn -Dthis=that -Dx=y -Dfalse=true -Dup=down
 
 Using `^keyword^replacement`, you can do simple search-and-replace to
 correct typos without annoying retyping or editing.
