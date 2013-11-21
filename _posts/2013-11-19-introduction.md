@@ -38,8 +38,7 @@ There you go. Type a phrase and then press `^R` again step back through
 a filtered version of your history that only includes commands with your
 search phrase. E.g.,
 
-    (reverse-i-search)`git': git commit -m "Creating a placeholder/test
-    page."
+    (reverse-i-search)`git': git commit -m "Creating a placeholder/test page."
 
 Notice that your search term appears just after `(reverse-i-search)`, in
 case you forgot what you were looking for. And do remember that you have to
@@ -124,6 +123,7 @@ Now I've got the great command, but what's the fastest way to execute it
 without running the risk of introducing an error into the pattern?
 
     $ rm !*
+    rm this[^x]that{or,the,other}*.txt
 
 The `!*` notation is shorthand for "all the arguments of the preceding
 command". (If you want to use it with an older reference, you can do
