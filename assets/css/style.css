@@ -189,3 +189,16 @@ ul.dropdown-menu>li>a>i.fa {
     width: 1.3em;
 }
 
+aside {
+	background: #f5f5f5;
+	font-style: italic;
+	padding: 1em;
+	margin-bottom: 10px;
+	margin-left: 2em;
+	margin-right: 2em;
+	border-radius: 4px;
+}
+
+aside > :last-child {
+	margin-bottom: 0;
+}
