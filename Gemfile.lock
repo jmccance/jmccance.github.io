@@ -42,6 +42,3 @@ DEPENDENCIES
   jekyll
   jekyll-paginate
   pygments.rb
-
-BUNDLED WITH
-   1.12.0.rc

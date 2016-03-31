@@ -6,6 +6,10 @@ categories:
 fullview: true
 ---
 
+<aside markdown="1">
+Originally posted (with minor differences) at [slalom.com/thinking](https://www.slalom.com/thinking/overcoming-immutability-in-scala) on 2016-03-25.
+</aside>
+
 So you've decided to write some Scala. You've been sold on the power and flexibility of the language, you've gotten over the initial hurdles of the new syntax, and you're ready to start writing clean, functional code. Besides, you've already mastered a handful of other common languages. How hard can it be to pick up one more?
 
 If all your previous languages were mainly imperative, the jump may be harder than you'd expect. Things like strict immutability, functional purity, type classes, and so on are more than just syntactical differences; they require a fundamentally different approach to your code. As a newcomer to functional programming, it's easy to get frustrated when seemingly simple problems turn into thorny logic puzzles.
