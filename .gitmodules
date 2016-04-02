@@ -1,0 +1,6 @@
+[submodule "slides/scala-error-handling"]
+	path = slides/scala-error-handling
+	url = https://github.com/jmccance/scala-error-handling.git
+[submodule "slides/intro-to-implicits"]
+	path = slides/intro-to-implicits
+	url = https://github.com/jmccance/intro-to-implicits.git
