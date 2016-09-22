@@ -6,4 +6,4 @@
 	url = https://github.com/jmccance/intro-to-implicits.git
 [submodule "slides/typed-fp-scala"]
 	path = slides/typed-fp-scala
-	url = git@github.com:jmccance/typed-fp-scala.git
+	url = https://github.com/jmccance/typed-fp-scala.git
