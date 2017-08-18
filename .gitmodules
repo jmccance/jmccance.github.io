@@ -7,3 +7,6 @@
 [submodule "slides/typed-fp-scala"]
 	path = slides/typed-fp-scala
 	url = https://github.com/jmccance/typed-fp-scala.git
+[submodule "slides/implicits-case-2017-08"]
+	path = slides/implicits-case-2017-08
+	url = git@github.com:jmccance/implicits-case-2017-08.git
