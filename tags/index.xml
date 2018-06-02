@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Dirigible Friendly, Xyz.</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Dirigible Friendly, Xyz.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sat, 02 Jun 2018 13:07:28 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Foo</title>
+      <link>/tags/foo/</link>
+      <pubDate>Sat, 02 Jun 2018 13:07:28 -0500</pubDate>
+      
+      <guid>/tags/foo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scala</title>
+      <link>/tags/scala/</link>
+      <pubDate>Sat, 02 Jun 2018 13:07:28 -0500</pubDate>
+      
+      <guid>/tags/scala/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
