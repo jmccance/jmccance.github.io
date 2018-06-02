@@ -6,7 +6,7 @@
     <description>Recent content in Dirigible Friendly, Xyz. on Dirigible Friendly, Xyz.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
+    <copyright>&amp;copy; 2018 Joel McCance</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0500</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
@@ -17,10 +17,6 @@
       
       <guid>/post/overcoming-immutability-in-scala/</guid>
       <description>
-
-&lt;aside&gt;
-  [Originally posted (with minor differences) at &lt;a href=&#34;https://www.slalom.com/thinking/overcoming-immutability-in-scala&#34; target=&#34;_blank&#34;&gt;slalom.com/thinking&lt;/a&gt; on 2016-03-25.]
-&lt;/aside&gt;
 
 &lt;p&gt;So you&amp;rsquo;ve decided to write some Scala. You&amp;rsquo;ve been sold on the power and flexibility of the language, you&amp;rsquo;ve gotten over the initial hurdles of the new syntax, and you&amp;rsquo;re ready to start writing clean, functional code. Besides, you&amp;rsquo;ve already mastered a handful of other common languages. How hard can it be to pick up one more?&lt;/p&gt;
 
@@ -244,6 +240,10 @@ for (User user : users) {
 &lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
 
 &lt;p&gt;It’s easy for immutability to discourage new Scala developers. When you dive into a new language, it’s usually because you want to get something done, not fiddle around with basic things like initialization and collection twiddling. But immutability is fundamental to functional programming; without it, writing pure functions would be meaningless. Hopefully these examples will help you to overcome this initial hurdle and enjoy the benefits of working with values that will never change.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;em&gt;Originally posted (with minor differences) on &lt;a href=&#34;https://medium.com/slalom-engineering/overcoming-immutability-in-scala-eef28272d04f&#34; target=&#34;_blank&#34;&gt;Slalom Engineering&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
