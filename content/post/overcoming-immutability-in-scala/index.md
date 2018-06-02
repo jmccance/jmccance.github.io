@@ -1,6 +1,6 @@
 ---
 title: Overcoming Immutability in Scala
-draft: true
+draft: false
 date: 2016-03-30
 tags: ["scala", "functional-programming"]
 ---
@@ -128,7 +128,7 @@ There’s some issues with this approach though. For one thing, it’s [generall
 
 This is an important intuition to develop about Scala: if something seems like it should be easier, it almost always is. Let’s take a look at the Scaladoc for Option to see if there’s anything there to help us.
 
-![Scaladoc for Option#getOrElse]({{site.url}}/assets/img/Option_getOrElse.png)
+![Scaladoc for Option#getOrElse](/images/Option_getOrElse.png)
 
 Bingo! This does exactly what we want in one simple, clear line.
 
@@ -215,7 +215,10 @@ val usersById = {
 
 This works, but it seems kind of wordy. Since we now know that there’s a natural transformation from Seq[(A, B)] to Map[A, B], let’s take a look at the Scaladoc for Seq to see if there’s anything to help us out.
 
-![Screenshot of searching the Scaladoc for Seq for the string 'Map\[' and finding the `toMap` method.]({{site.url}}/assets/img/search_seq_for_map.png)
+{{< figure
+  src="search_seq_for_map.png"
+  alt="Screenshot of searching the Scaladoc for Seq for the string 'Map[' and finding the `toMap` method."
+>}}
 
 With this, our map can be created with an elegant one-liner:
 
