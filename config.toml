@@ -10,7 +10,7 @@ title = "Dirigible Friendly, Xyz."
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
-copyright = "&copy; 2018"
+copyright = "&copy; 2018 Joel McCance"
 
 theme = "academic"
 enableEmoji = true
@@ -261,15 +261,15 @@ enableGitInfo = true
   url = "#posts"
   weight = 3
 
-[[menu.main]]
-  name = "Projects"
-  url = "#projects"
-  weight = 4
+# [[menu.main]]
+#   name = "Projects"
+#   url = "#projects"
+#   weight = 4
 
-[[menu.main]]
-  name = "Contact"
-  url = "#contact"
-  weight = 6
+# [[menu.main]]
+#   name = "Contact"
+#   url = "#contact"
+#   weight = 6
 
 # Taxonomies.
 [taxonomies]

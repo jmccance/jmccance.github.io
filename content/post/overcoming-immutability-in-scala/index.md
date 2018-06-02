@@ -5,10 +5,6 @@ date: 2016-03-30
 tags: ["scala", "functional-programming"]
 ---
 
-{{< aside >}}
-Originally posted (with minor differences) at [slalom.com/thinking](https://www.slalom.com/thinking/overcoming-immutability-in-scala) on 2016-03-25.
-{{< /aside >}}
-
 So you've decided to write some Scala. You've been sold on the power and flexibility of the language, you've gotten over the initial hurdles of the new syntax, and you're ready to start writing clean, functional code. Besides, you've already mastered a handful of other common languages. How hard can it be to pick up one more?
 
 If all your previous languages were mainly imperative, the jump may be harder than you'd expect. Things like strict immutability, functional purity, type classes, and so on are more than just syntactical differences; they require a fundamentally different approach to your code. As a newcomer to functional programming, it's easy to get frustrated when seemingly simple problems turn into thorny logic puzzles.
@@ -128,7 +124,7 @@ There’s some issues with this approach though. For one thing, it’s [generall
 
 This is an important intuition to develop about Scala: if something seems like it should be easier, it almost always is. Let’s take a look at the Scaladoc for Option to see if there’s anything there to help us.
 
-![Scaladoc for Option#getOrElse](/images/Option_getOrElse.png)
+![Scaladoc for Option#getOrElse](Option_getOrElse.png)
 
 Bingo! This does exactly what we want in one simple, clear line.
 
@@ -202,7 +198,7 @@ One way to figure this out is to look at the Scaladoc for Map and see how you de
 def apply[A, B](elems: (A, B)*): Map[A, B]
 ```
 
-Note the type of elems is `(A, B)\*`. `T*` is Scala’s syntax for [varargs](https://en.wikipedia.org/wiki/Variadic_function) argument of type T. So effectively, a Map is built from a list of tuples (A, B), where the first element is the key and the second is the value. This is actually what’s going on when you initialize a Map by hand. The `->` operator is just a convenience for creating pairs.
+Note the type of elems is `(A, B)*`. `T*` is Scala’s syntax for [varargs](https://en.wikipedia.org/wiki/Variadic_function) argument of type T. So effectively, a Map is built from a list of tuples (A, B), where the first element is the key and the second is the value. This is actually what’s going on when you initialize a Map by hand. The `->` operator is just a convenience for creating pairs.
 
 Now that we know that a Map can be build from a list of pairs, we can leverage that to initialize our Map:
 
@@ -215,10 +211,7 @@ val usersById = {
 
 This works, but it seems kind of wordy. Since we now know that there’s a natural transformation from Seq[(A, B)] to Map[A, B], let’s take a look at the Scaladoc for Seq to see if there’s anything to help us out.
 
-{{< figure
-  src="search_seq_for_map.png"
-  alt="Screenshot of searching the Scaladoc for Seq for the string 'Map[' and finding the `toMap` method."
->}}
+![Screenshot of searching the Scaladoc for Seq for the string 'Map\[' and finding the 'toMap' method.](search_seq_for_map.png)
 
 With this, our map can be created with an elegant one-liner:
 
@@ -240,3 +233,7 @@ If you try it out (which you definitely should!), you’ll see that you actually
 # Conclusion
 
 It’s easy for immutability to discourage new Scala developers. When you dive into a new language, it’s usually because you want to get something done, not fiddle around with basic things like initialization and collection twiddling. But immutability is fundamental to functional programming; without it, writing pure functions would be meaningless. Hopefully these examples will help you to overcome this initial hurdle and enjoy the benefits of working with values that will never change.
+
+---
+
+_Originally posted (with minor differences) on [Slalom Engineering](https://medium.com/slalom-engineering/overcoming-immutability-in-scala-eef28272d04f)._
