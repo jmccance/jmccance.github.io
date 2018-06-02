@@ -17,7 +17,7 @@
       
     
   
-  <meta name="description" content="Originally posted (with minor differences) at slalom.com/thinking on 2016-03-25.  So you&rsquo;ve decided to write some Scala. You&rsquo;ve been sold on the power and flexibility of the language, you&rsquo;ve gotten over the initial hurdles of the new syntax, and you&rsquo;re ready to start writing clean, functional code. Besides, you&rsquo;ve already mastered a handful of other common languages. How hard can it be to pick up one more?
+  <meta name="description" content="[Originally posted (with minor differences) at slalom.com/thinking on 2016-03-25.]  So you&rsquo;ve decided to write some Scala. You&rsquo;ve been sold on the power and flexibility of the language, you&rsquo;ve gotten over the initial hurdles of the new syntax, and you&rsquo;re ready to start writing clean, functional code. Besides, you&rsquo;ve already mastered a handful of other common languages. How hard can it be to pick up one more?
 If all your previous languages were mainly imperative, the jump may be harder than you&rsquo;d expect.">
 
   
@@ -80,13 +80,13 @@ If all your previous languages were mainly imperative, the jump may be harder th
   <meta property="og:site_name" content="Dirigible Friendly, Xyz.">
   <meta property="og:url" content="/post/overcoming-immutability-in-scala/">
   <meta property="og:title" content="Overcoming Immutability in Scala | Dirigible Friendly, Xyz.">
-  <meta property="og:description" content="Originally posted (with minor differences) at slalom.com/thinking on 2016-03-25.  So you&rsquo;ve decided to write some Scala. You&rsquo;ve been sold on the power and flexibility of the language, you&rsquo;ve gotten over the initial hurdles of the new syntax, and you&rsquo;re ready to start writing clean, functional code. Besides, you&rsquo;ve already mastered a handful of other common languages. How hard can it be to pick up one more?
+  <meta property="og:description" content="[Originally posted (with minor differences) at slalom.com/thinking on 2016-03-25.]  So you&rsquo;ve decided to write some Scala. You&rsquo;ve been sold on the power and flexibility of the language, you&rsquo;ve gotten over the initial hurdles of the new syntax, and you&rsquo;re ready to start writing clean, functional code. Besides, you&rsquo;ve already mastered a handful of other common languages. How hard can it be to pick up one more?
 If all your previous languages were mainly imperative, the jump may be harder than you&rsquo;d expect.">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2016-03-30T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2016-03-30T00:00:00&#43;00:00">
+  <meta property="article:modified_time" content="2018-06-02T16:59:48-05:00">
   
 
   
@@ -221,8 +221,10 @@ If all your previous languages were mainly imperative, the jump may be harder th
 
   <span class="article-date">
     
+        Last updated on
+    
     <time datetime="2016-03-30 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
-      Wednesday, 30 March, 2016
+      Saturday, 2 June, 2018
     </time>
   </span>
   <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
@@ -292,7 +294,7 @@ If all your previous languages were mainly imperative, the jump may be harder th
       
 
 <aside>
-  Originally posted (with minor differences) at <a href="https://www.slalom.com/thinking/overcoming-immutability-in-scala" target="_blank">slalom.com/thinking</a> on 2016-03-25.
+  [Originally posted (with minor differences) at <a href="https://www.slalom.com/thinking/overcoming-immutability-in-scala" target="_blank">slalom.com/thinking</a> on 2016-03-25.]
 </aside>
 
 <p>So you&rsquo;ve decided to write some Scala. You&rsquo;ve been sold on the power and flexibility of the language, you&rsquo;ve gotten over the initial hurdles of the new syntax, and you&rsquo;re ready to start writing clean, functional code. Besides, you&rsquo;ve already mastered a handful of other common languages. How hard can it be to pick up one more?</p>
@@ -410,7 +412,7 @@ if (someFoo != null) {
 
 <p>This is an important intuition to develop about Scala: if something seems like it should be easier, it almost always is. Let’s take a look at the Scaladoc for Option to see if there’s anything there to help us.</p>
 
-<p><img src="/images/Option_getOrElse.png" alt="Scaladoc for Option#getOrElse" /></p>
+<p><img src="Option_getOrElse.png" alt="Scaladoc for Option#getOrElse" /></p>
 
 <p>Bingo! This does exactly what we want in one simple, clear line.</p>
 
@@ -481,7 +483,7 @@ for (User user : users) {
 <pre><code class="language-scala">def apply[A, B](elems: (A, B)*): Map[A, B]
 </code></pre>
 
-<p>Note the type of elems is <code>(A, B)\*</code>. <code>T*</code> is Scala’s syntax for <a href="https://en.wikipedia.org/wiki/Variadic_function" target="_blank">varargs</a> argument of type T. So effectively, a Map is built from a list of tuples (A, B), where the first element is the key and the second is the value. This is actually what’s going on when you initialize a Map by hand. The <code>-&gt;</code> operator is just a convenience for creating pairs.</p>
+<p>Note the type of elems is <code>(A, B)*</code>. <code>T*</code> is Scala’s syntax for <a href="https://en.wikipedia.org/wiki/Variadic_function" target="_blank">varargs</a> argument of type T. So effectively, a Map is built from a list of tuples (A, B), where the first element is the key and the second is the value. This is actually what’s going on when you initialize a Map by hand. The <code>-&gt;</code> operator is just a convenience for creating pairs.</p>
 
 <p>Now that we know that a Map can be build from a list of pairs, we can leverage that to initialize our Map:</p>
 
@@ -493,7 +495,7 @@ for (User user : users) {
 
 <p>This works, but it seems kind of wordy. Since we now know that there’s a natural transformation from Seq[(A, B)] to Map[A, B], let’s take a look at the Scaladoc for Seq to see if there’s anything to help us out.</p>
 
-<p><img src="images/search_seq_for_map.png" alt="Screenshot of searching the Scaladoc for Seq for the string 'Map\[' and finding the `toMap` method." /></p>
+<p><img src="search_seq_for_map.png" alt="Screenshot of searching the Scaladoc for Seq for the string 'Map\[' and finding the 'toMap' method." /></p>
 
 <p>With this, our map can be created with an elegant one-liner:</p>
 

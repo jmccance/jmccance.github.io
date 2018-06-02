@@ -19,7 +19,7 @@
       <description>
 
 &lt;aside&gt;
-  Originally posted (with minor differences) at &lt;a href=&#34;https://www.slalom.com/thinking/overcoming-immutability-in-scala&#34; target=&#34;_blank&#34;&gt;slalom.com/thinking&lt;/a&gt; on 2016-03-25.
+  [Originally posted (with minor differences) at &lt;a href=&#34;https://www.slalom.com/thinking/overcoming-immutability-in-scala&#34; target=&#34;_blank&#34;&gt;slalom.com/thinking&lt;/a&gt; on 2016-03-25.]
 &lt;/aside&gt;
 
 &lt;p&gt;So you&amp;rsquo;ve decided to write some Scala. You&amp;rsquo;ve been sold on the power and flexibility of the language, you&amp;rsquo;ve gotten over the initial hurdles of the new syntax, and you&amp;rsquo;re ready to start writing clean, functional code. Besides, you&amp;rsquo;ve already mastered a handful of other common languages. How hard can it be to pick up one more?&lt;/p&gt;
@@ -137,7 +137,7 @@ if (someFoo != null) {
 
 &lt;p&gt;This is an important intuition to develop about Scala: if something seems like it should be easier, it almost always is. Let’s take a look at the Scaladoc for Option to see if there’s anything there to help us.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/images/Option_getOrElse.png&#34; alt=&#34;Scaladoc for Option#getOrElse&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;Option_getOrElse.png&#34; alt=&#34;Scaladoc for Option#getOrElse&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Bingo! This does exactly what we want in one simple, clear line.&lt;/p&gt;
 
@@ -208,7 +208,7 @@ for (User user : users) {
 &lt;pre&gt;&lt;code class=&#34;language-scala&#34;&gt;def apply[A, B](elems: (A, B)*): Map[A, B]
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Note the type of elems is &lt;code&gt;(A, B)\*&lt;/code&gt;. &lt;code&gt;T*&lt;/code&gt; is Scala’s syntax for &lt;a href=&#34;https://en.wikipedia.org/wiki/Variadic_function&#34; target=&#34;_blank&#34;&gt;varargs&lt;/a&gt; argument of type T. So effectively, a Map is built from a list of tuples (A, B), where the first element is the key and the second is the value. This is actually what’s going on when you initialize a Map by hand. The &lt;code&gt;-&amp;gt;&lt;/code&gt; operator is just a convenience for creating pairs.&lt;/p&gt;
+&lt;p&gt;Note the type of elems is &lt;code&gt;(A, B)*&lt;/code&gt;. &lt;code&gt;T*&lt;/code&gt; is Scala’s syntax for &lt;a href=&#34;https://en.wikipedia.org/wiki/Variadic_function&#34; target=&#34;_blank&#34;&gt;varargs&lt;/a&gt; argument of type T. So effectively, a Map is built from a list of tuples (A, B), where the first element is the key and the second is the value. This is actually what’s going on when you initialize a Map by hand. The &lt;code&gt;-&amp;gt;&lt;/code&gt; operator is just a convenience for creating pairs.&lt;/p&gt;
 
 &lt;p&gt;Now that we know that a Map can be build from a list of pairs, we can leverage that to initialize our Map:&lt;/p&gt;
 
@@ -220,7 +220,7 @@ for (User user : users) {
 
 &lt;p&gt;This works, but it seems kind of wordy. Since we now know that there’s a natural transformation from Seq[(A, B)] to Map[A, B], let’s take a look at the Scaladoc for Seq to see if there’s anything to help us out.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;images/search_seq_for_map.png&#34; alt=&#34;Screenshot of searching the Scaladoc for Seq for the string &#39;Map\[&#39; and finding the `toMap` method.&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;search_seq_for_map.png&#34; alt=&#34;Screenshot of searching the Scaladoc for Seq for the string &#39;Map\[&#39; and finding the &#39;toMap&#39; method.&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;With this, our map can be created with an elegant one-liner:&lt;/p&gt;
 

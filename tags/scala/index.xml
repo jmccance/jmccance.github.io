@@ -18,7 +18,7 @@
       <pubDate>Wed, 30 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>/post/overcoming-immutability-in-scala/</guid>
-      <description>Originally posted (with minor differences) at slalom.com/thinking on 2016-03-25.  So you&amp;rsquo;ve decided to write some Scala. You&amp;rsquo;ve been sold on the power and flexibility of the language, you&amp;rsquo;ve gotten over the initial hurdles of the new syntax, and you&amp;rsquo;re ready to start writing clean, functional code. Besides, you&amp;rsquo;ve already mastered a handful of other common languages. How hard can it be to pick up one more?
+      <description>[Originally posted (with minor differences) at slalom.com/thinking on 2016-03-25.]  So you&amp;rsquo;ve decided to write some Scala. You&amp;rsquo;ve been sold on the power and flexibility of the language, you&amp;rsquo;ve gotten over the initial hurdles of the new syntax, and you&amp;rsquo;re ready to start writing clean, functional code. Besides, you&amp;rsquo;ve already mastered a handful of other common languages. How hard can it be to pick up one more?
 If all your previous languages were mainly imperative, the jump may be harder than you&amp;rsquo;d expect.</description>
     </item>
     
