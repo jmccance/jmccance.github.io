@@ -1,0 +1,9 @@
+.article aside {
+  padding: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  width: 90%;
+  font-size: 0.8em;
+}
