@@ -2,16 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     
-    
-    <url>
-    
-      <loc>/post/overcoming-immutability-in-scala/</loc>
-      <lastmod>2018-06-02T16:59:48-05:00</lastmod>
-    </url>
-    
-  
-    
-    
     <url>
     
       <loc>/categories/</loc>
@@ -19,37 +9,6 @@
     </url>
     
   
-    
-    
-    <url>
-    
-      <loc>/</loc>
-      <lastmod>2018-06-02T16:21:40-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/functional-programming/</loc>
-      <lastmod>2018-06-02T16:59:48-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/post/</loc>
-      <lastmod>2018-06-02T16:59:48-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
     
     <url>
     
@@ -59,21 +18,18 @@
     
   
     
-    
     <url>
     
-      <loc>/tags/scala/</loc>
-      <lastmod>2018-06-02T16:59:48-05:00</lastmod>
+      <loc>/tags/</loc>
       <priority>0</priority>
     </url>
     
   
     
-    
     <url>
     
-      <loc>/tags/</loc>
-      <lastmod>2018-06-02T16:59:48-05:00</lastmod>
+      <loc>/</loc>
+      <lastmod>2019-01-21T13:40:15-06:00</lastmod>
       <priority>0</priority>
     </url>
     
