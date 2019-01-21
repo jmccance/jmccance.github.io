@@ -2,12 +2,12 @@
 name = "Dirigible Friendly"
 
 # Optional Google font URL
-google_fonts = "Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono|Source+Code+Pro"
+google_fonts = "Montserrat:400,700|Roboto:400,400italic,700|Source+Code+Pro|Share"
 
 # Font families
 heading_font = "Montserrat"
 body_font = "Roboto"
-nav_font = "Roboto"
+nav_font = "Montserrat"
 mono_font = "Source Code Pro"
 
 # Font size

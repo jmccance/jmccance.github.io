@@ -6,11 +6,11 @@
 baseurl = "/"
 
 # Title of your site
-title = "Dirigible Friendly, Xyz."
+title = "jmccance.net"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
-copyright = "&copy; 2018 Joel McCance"
+copyright = "&copy; 2019 Joel McCance"
 
 theme = "academic"
 enableEmoji = true
@@ -47,7 +47,7 @@ enableGitInfo = true
 [params]
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `coffee`, `dark`, or `1950s`.
-  color_theme = "default"
+  color_theme = "dark"
 
   # Font style.
   #   Choose from `default`, `classic`, or `playfair`.
@@ -225,22 +225,22 @@ enableGitInfo = true
 
   [[params.social]]
     icon = "twitter"
-    icon_pack = "fa"
+    icon_pack = "fab"
     link = "//twitter.com/jmccance"
 
   [[params.social]]
     icon = "github"
-    icon_pack = "fa"
+    icon_pack = "fab"
     link = "//github.com/jmccance"
 
   [[params.social]]
     icon = "linkedin"
-    icon_pack = "fa"
+    icon_pack = "fab"
     link = "//linkedin.com/in/jmccance"
 
   [[params.social]]
     icon = "medium"
-    icon_pack = "fa"
+    icon_pack = "fab"
     link = "//medium.com/@jmccance"
 
 # Navigation Links
@@ -251,15 +251,15 @@ enableGitInfo = true
   # Align the main menu to the right of the page? (true/false)
   align_right = true
 
-[[menu.main]]
-  name = "Home"
-  url = "#about"
-  weight = 1
-
-[[menu.main]]
-  name = "Posts"
-  url = "#posts"
-  weight = 3
+# [[menu.main]]
+#   name = "Home"
+#   url = "#about"
+#   weight = 1
+# 
+# [[menu.main]]
+#   name = "Posts"
+#   url = "#posts"
+#   weight = 3
 
 # [[menu.main]]
 #   name = "Projects"
